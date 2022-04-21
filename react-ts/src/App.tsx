@@ -11,6 +11,10 @@ function App() {
       id: 2,
       text: "Learn Style Component",
     },
+    {
+      id: 3,
+      text: "Learn React",
+    },
   ];
 
   //! use with Class
