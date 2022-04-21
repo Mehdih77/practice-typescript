@@ -1,4 +1,4 @@
-const x: number = 2;
+let x: number = 2;
 
 let user: string;
 
@@ -46,7 +46,7 @@ advance = [
     },
     {
         name:"sss",
-        age: 33
+        age: 36
     },
 ]
 
@@ -70,7 +70,7 @@ union = 12;
 type myType = {
     name: string,
     age: number,
-    isActive: boolean
+    isActive: Boolean
 }
 
 let ggg: myType;
@@ -86,6 +86,9 @@ ggg = {
 function add(a: number, b:number) : number | string {
     return a + b;
 }
+
+// console.log(add(1,"2"));  ====>> Error
+
 
 //////////////////
 //! Generics
