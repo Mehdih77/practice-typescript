@@ -16,10 +16,14 @@ function App() {
     ]);
   };
 
+  const deleteTodo = (id: number) => {
+    setTodosList((prevState) => prevState.filter((todo) => todo.id !== id));
+  };
+
   return (
     <div className="App">
       <AddTodo addNewTodo={addNewTodo} />
-      <Todos items={todosList} />
+      <Todos items={todosList} deleteTodo={deleteTodo} />
     </div>
   );
 }
